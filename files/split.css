@@ -1,0 +1,354 @@
+ /*
+ Hola! I hope you enjoy bottts!
+ */
+
+
+ /* -- CSS Reset -- */
+
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+ }
+
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+ }
+
+ body {
+  line-height: 1;
+ }
+
+ ol, ul {
+  list-style: none;
+ }
+
+ blockquote, q {
+  quotes: none;
+ }
+
+ blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+ }
+
+ table {
+  border-collapse: collapse;
+  border-spacing: 0;
+ }
+
+ * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
+  margin: 0;
+ }
+
+ img.alignright {
+  float: right;
+ }
+
+ img.alignleft {
+  float: left;
+ }
+
+ img.aligncenter {
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+ }
+
+ body {
+  background-color: #0e0e27;
+  border-style: none;
+ }
+
+ body, p, a, a:hover {
+  color: #9984ff;
+ }
+
+ a, a:hover {
+  text-decoration: none;
+  border: none;
+  border-style: none;
+  box-shadow: none;
+ }
+
+ /* -- Content -- */
+
+ @-webkit-keyframes fadein {
+  from {
+   opacity: 0;
+  }
+  to {
+   opacity: 1;
+  }
+ }
+
+ @keyframes fadein {
+  from {
+   opacity: 0;
+  }
+  to {
+   opacity: 1;
+  }
+ }
+
+ html {
+  background-color: #0e0e27;
+ }
+
+ body.page-template-page-fullsingle-split {
+  background-color: #181028;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+ }
+
+ body.page-template-page-fullsingle-split p {
+  color: #fff;
+ }
+
+ .fs-split {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+ }
+
+ @media (max-width: 800px) {
+  .fs-split {
+   height: auto;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+  }
+ }
+
+ .fs-split .split-image {
+  width: 50%;
+  height: 100vh;
+  background-image: url("bottts.png");
+  background-position: center center;
+  background-size: cover;
+ }
+
+ @media (max-width: 800px) {
+  .fs-split .split-image {
+   height: 28vh;
+   width: 100%;
+  }
+ }
+
+ .fs-split .split-content {
+  width: 50%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: auto;
+ }
+
+ @media (max-width: 800px) {
+  .fs-split .split-content {
+   width: 100%;
+   height: auto;
+  }
+ }
+
+ .fs-split .split-content .split-content-vertically-center {
+  padding: 80px;
+  max-width: 480px;
+  margin-top: auto;
+  margin-bottom: auto;
+ }
+
+ @media (max-width: 1200px) {
+  .fs-split .split-content .split-content-vertically-center {
+   padding: 60px;
+  }
+ }
+
+ @media (max-width: 800px) {
+  .fs-split .split-content .split-content-vertically-center {
+   padding: 24px;
+   margin-top: 56px;
+  }
+ }
+
+ @media (max-width: 500px) {
+  .fs-split .split-content .split-content-vertically-center {
+   margin-top: 16px;
+  }
+ }
+
+ .split-intro {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 62px;
+  letter-spacing: -2px;
+ }
+
+ .split-intro h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 16px;
+  margin-bottom: 16px;
+  letter-spacing: 0.0px;
+  color: #d25cff;
+ }
+
+ .split-intro .tagline {
+  color: #fff;
+ }
+
+ .split-bio {
+  padding: 16px 0 32px 0;
+ }
+
+ .split-bio p {
+  color: #fff;
+ }
+
+ .split-bio a {
+  color: #d25cff;
+  transition-duration: 0.5s;
+  border-bottom: 1px dotted #131B27;
+ }
+
+ .split-bio a:hover {
+  color: #c09eff;
+  transition-duration: 0.1s;
+  border-bottom: 1px dotted #CA486d;
+ }
+
+ .split-credit {
+  opacity: 0.8;
+  padding: 48px 0 16px 0;
+ }
+
+ .split-credit p {
+  font-size: 14px;
+  line-height: 24px;
+ }
+
+ .split-credit p a {
+  color: #d25cff;
+  font-weight: 700;
+ }
+
+ @media (max-width: 1200px) {
+  .split-bio {
+   padding: 30px 0;
+  }
+ }
+
+ @media (max-width: 960px) {
+  .split-intro {
+   font-size: 48px;
+   line-height: 52px;
+   letter-spacing: -2px;
+  }
+  .split-bio {
+   padding: 16px 0;
+  }
+ }
+
+ @media (max-width: 800px) {
+  .split-bio {
+   padding: 20px 0;
+  }
+  .split-intro {
+   font-size: 48px;
+   line-height: 52px;
+   letter-spacing: -2px;
+  }
+ }
+
+ @media (max-width: 500px) {
+  .split-intro h1 {
+   font-size: 24px;
+  }
+  .split-intro {
+   font-size: 32px;
+   line-height: 40px;
+  }
+  .split-bio {
+   padding: 8px 0 24px;
+   font-size: 18px;
+   line-height: 26px;
+  }
+  .split-credit {
+   opacity: 0.8;
+   padding: 24px 0 8px 0;
+  }
+ }
+
+ .split-tweet {
+  display: flex;
+  align-items: center;
+ }
+
+ .twitter-share-button {
+  padding-right: 8px;
+ }
+
+ .split-video {
+  overflow: hidden;
+  position: relative;
+ }
+
+ .video-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+ }
+
+ .video-container {
+  position: relative;
+  overflow: hidden;
+  height: 56.25vw;
+  width: 100vw;
+ }
+
+ @media (max-aspect-ratio: 16 / 9) {
+  .video-container {
+   height: 100vh;
+   width: 177.7777777778vh;
+  }
+ }
+
+ .video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ }
+
+ video.video {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+ }
